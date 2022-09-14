@@ -1,5 +1,8 @@
 import './style.css'
-import {setUpShapeResizer} from './src/setUpShapeResizer.js'
+import {setUpShapeResizer} from './src/shapeResizer.js'
+import {setUpOptions} from './src/toolOptions.js'
+import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
+import {setUpDisplayCode} from './src/displayCode.js'
 
 document.querySelector('#app').innerHTML = `
 <section id="shape-container">
@@ -42,4 +45,6 @@ document.querySelector('#app').innerHTML = `
 `
 
 setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
-
+setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
+setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
+setUpDisplayCode(document.getElementById("code"));
