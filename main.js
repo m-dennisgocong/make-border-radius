@@ -2,7 +2,7 @@ import './style.css'
 import {setUpShapeResizer} from './src/shapeResizer.js'
 import {setUpOptions} from './src/toolOptions.js'
 import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
-import {setUpDisplayCode} from './src/displayCode.js'
+
 
 document.querySelector('#app').innerHTML = `
 <section id="shape-container">
@@ -39,12 +39,19 @@ document.querySelector('#app').innerHTML = `
 
     <div class="output">
         <label for="output">CSS:</label>
-        <code id="code"></code>
+        <code id="code">
+        height: <span id="hValue">180px</span> </br>
+        width: <span id="wValue">180px</span> </br>
+        border-radius:
+        <span id="top-left-value"> 0% </span> 
+        <span id="top-right-value">0% </span>
+        <span id="bottom-right-value"> 0% </span>
+        <span id="bottom-left-value"> 0% </span>
+        </code>
     </div>
 </aside>
 `
-
 setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
+setUpShapeResizer(document.getElementById('shape'));
 setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
-setUpDisplayCode(document.getElementById("code"));
