@@ -1,5 +1,9 @@
+
 export function setUpShapeResizer(element){
+
     const el = document.getElementById('shape');
+    const heightValue = document.getElementById('hValue');
+    const widthValue = document.getElementById('wValue');
     function mouseDown(e){
         
         let currentResizer = e.target;
@@ -13,7 +17,7 @@ export function setUpShapeResizer(element){
         
             const rect = el.getBoundingClientRect();
     
-            if (currentResizer.classList.contains("se")) {
+            if (currentResizer.classList.contains("se")) {  
                 el.style.width = rect.width - (prevX - e.clientX) + "px";
                 el.style.height = rect.height - (prevY - e.clientY) + "px";
             } 
@@ -29,9 +33,11 @@ export function setUpShapeResizer(element){
                 el.style.width = rect.width + (prevX - e.clientX) + "px";
                 el.style.height = rect.height + (prevY - e.clientY) + "px";
             } 
-    
+           
             prevX = e.clientX;
             prevY = e.clientY;
+            heightValue.innerText = el.clientHeight+"px";
+            widthValue.innerText = el.clientWidth+"px";
         }
 
         function mouseUp(e){
@@ -43,4 +49,3 @@ export function setUpShapeResizer(element){
     }
     element.forEach(element => {element.addEventListener('mousedown', mouseDown)});
 }
-
