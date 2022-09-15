@@ -1,15 +1,11 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 200;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
-
+  
   /* shape variables */
   --shape-color: #c7ffed;
   --shape-resizer: rgb(170, 30, 30);
@@ -96,23 +92,25 @@ body {
 /* toolbox */
 #toolbox{
   /* position: relative; */
-  padding: 2em 1.5em;
+  
+  padding: .5em .5em;
   height: auto;
-  width: 23em;
+  width: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--toolbox-color);
-  border-radius: 0.7em;
-  margin: 5em auto;
+  border-radius: 0.6em;
+  margin-top: 3.5em;
   z-index: 200;
 }
 
 #toolbox .options{
   display: flex;
   align-items: center; 
-  margin: 1em 0;  
+  margin: 1em auto;  
+  
 }
 
 .button{
@@ -122,7 +120,7 @@ body {
 
 .button.allb{
   padding: 0.5em 2.5em;
-  margin-left: 1em;
+  margin-left: 0.5em;
   border-right: 0.01em solid var(--button-border);
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
@@ -155,10 +153,10 @@ input[type='range']{
 
 .option{
   display: none;
-  width: 64%;
+  width: 100%;
   margin-bottom: 1em;
+  padding: 0 1.8em;
 }
-
 .show{
   display: block;
 }
@@ -166,19 +164,20 @@ input[type='range']{
 /* code */
 div.output{
   display: flex;
-  margin-top: 0.75em;
-  
+  flex-direction: column;
+  gap: .5em;
+  width: 260px;
+  min-width: 260px;
+  margin-bottom: 1em;
 }
-
+div.output label{
+  padding-left: 1.3em;
+}
 code{
-  border: 0.02em solid #646464;
+  border: 0.2em solid #707070;
   background-color: #ffffff;
+  align-self: center;
   padding: 1em;
   border-radius: 0.5em;
   line-height: 1.5em;
-
-}
-
-.output label{
-  padding: 0 0.8em;   
 }
