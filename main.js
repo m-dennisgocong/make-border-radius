@@ -40,13 +40,13 @@ document.querySelector('#app').innerHTML = `
     <div class="output">
         <label for="output">CSS:</label>
         <code id="code">
-        height: <span id="hValue">180px</span> </br>
-        width: <span id="wValue">180px</span> </br>
+        height: <span id="hValue">180px;</span> </br>
+        width: <span id="wValue">180px;</span> </br>
         border-radius:
         <span id="top-left-value"> 0% </span> 
         <span id="top-right-value">0% </span>
         <span id="bottom-right-value"> 0% </span>
-        <span id="bottom-left-value"> 0% </span>
+        <span id="bottom-left-value"> 0%;</span>
         </code>
     </div>
 </aside>
