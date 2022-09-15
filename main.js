@@ -52,6 +52,5 @@ document.querySelector('#app').innerHTML = `
 </aside>
 `
 setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
-setUpShapeResizer(document.getElementById('shape'));
 setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
