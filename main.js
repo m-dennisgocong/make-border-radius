@@ -5,7 +5,16 @@ import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
 
 
 document.querySelector('#app').innerHTML = `
+
 <section id="shape-container">
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
     <div id="shape">
         <div class="resizer nw"></div>
         <div class="resizer ne"></div>
@@ -49,8 +58,10 @@ document.querySelector('#app').innerHTML = `
         <span id="bottom-left-value"> 0%;</span>
         </code>
     </div>
+    
 </aside>
 `
 setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
 setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
+backgroundAnimation(document.getElementsByClassName('background'));
