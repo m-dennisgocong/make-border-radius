@@ -155,16 +155,12 @@ input[type='range']{
 
 .option{
   display: none;
+  width: 64%;
+  margin-bottom: 1em;
 }
 
 .show{
   display: block;
-}
-
-.option{
-  width: 64%;
-  margin-bottom: 1em;
- 
 }
 
 /* code */
