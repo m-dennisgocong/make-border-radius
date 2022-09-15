@@ -95,7 +95,7 @@ body {
   
   padding: .5em .5em;
   height: auto;
-  width: 20em;
+  width: 22em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,7 +144,7 @@ body {
 } 
 
 input[type='range']{
-  width: 100%;
+  width: 250px;
 }
 
 .individual label{
@@ -153,9 +153,8 @@ input[type='range']{
 
 .option{
   display: none;
-  width: 100%;
   margin-bottom: 1em;
-  padding: 0 1.8em;
+  width: 250px;
 }
 .show{
   display: block;
@@ -166,18 +165,55 @@ div.output{
   display: flex;
   flex-direction: column;
   gap: .5em;
-  width: 260px;
-  min-width: 260px;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
 }
 div.output label{
   padding-left: 1.3em;
 }
 code{
+  width: 280px;
   border: 0.2em solid #707070;
   background-color: #ffffff;
   align-self: center;
   padding: 1em;
   border-radius: 0.5em;
   line-height: 1.5em;
+}
+
+/* break points */
+
+@media (min-width: 769px){
+  #app{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5em;
+      margin: 0;
+      padding: 0;
+  }
+  .resizer.ne{    
+      top: -25px;
+      right: -25px;
+      border-top: 18px solid var(--shape-resizer);
+      border-left: 18px solid transparent;
+      cursor: ne-resize;
+  }
+  .resizer.nw{
+      top: -25px;
+      left: -25px;
+      border-top: 18px solid var(--shape-resizer);
+      border-right: 18px solid transparent;
+      cursor: nw-resize;
+  }
+  #toolbox{
+    width: 400px;
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 1280px){
+  #app{
+      gap: 8em;
+  }
 }
