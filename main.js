@@ -2,19 +2,11 @@ import './style.css'
 import {setUpShapeResizer} from './src/shapeResizer.js'
 import {setUpOptions} from './src/toolOptions.js'
 import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
+import {setUpBackground} from './src/backgroundAnimation.js'
 
 
 document.querySelector('#app').innerHTML = `
-
 <section id="shape-container">
-    <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-
     <div id="shape">
         <div class="resizer nw"></div>
         <div class="resizer ne"></div>
@@ -52,16 +44,14 @@ document.querySelector('#app').innerHTML = `
         height: <span id="hValue">200px;</span> </br>
         width: <span id="wValue">200px;</span> </br>
         border-radius:
-        <span id="top-left-value"> 0% </span> 
-        <span id="top-right-value"></span>
-        <span id="bottom-right-value"></span>
-        <span id="bottom-left-value"></span>
+        <span id="borderRadiusValue"> 0%;</span> 
         </code>
     </div>
     
 </aside>
+<ul class="background"></ul>
 `
 setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
 setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
-backgroundAnimation(document.getElementsByClassName('background'));
+setUpBackground(document.querySelector('ul.background'));
