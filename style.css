@@ -276,6 +276,7 @@ code{
       cursor: nw-resize;
   }
   #toolbox{
+    margin: 0;
     width: 400px;
     min-width: 350px;
   }
