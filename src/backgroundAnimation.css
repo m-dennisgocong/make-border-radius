@@ -1,0 +1,70 @@
+/* background animation */
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+  }
+  
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgb(46, 94, 105);
+    overflow: hidden;
+  }
+  .background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 37s linear infinite;
+  }
+  
+  .background li:nth-child(0) {
+    left: 2%;
+    width: 341px;
+    height: 341px;
+    bottom: -341px;
+    animation-delay: 1s;
+  }
+  .background li:nth-child(1) {
+    left: 24%;
+    width: 393px;
+    height: 393px;
+    bottom: -393px;
+    animation-delay: 3s;
+  }
+  .background li:nth-child(2) {
+    left: 84%;
+    width: 374px;
+    height: 374px;
+    bottom: -374px;
+    animation-delay: 6s;
+  }
+  .background li:nth-child(3) {
+    left: 71%;
+    width: 268px;
+    height: 268px;
+    bottom: -268px;
+    animation-delay: 9s;
+  }
+  .background li:nth-child(4) {
+    left: 9%;
+    width: 366px;
+    height: 366px;
+    bottom: -366px;
+    animation-delay: 16s;
+  }
