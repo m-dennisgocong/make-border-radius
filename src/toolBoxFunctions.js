@@ -13,10 +13,7 @@ export function setUpToolBoxFunctions(element){
             element.forEach(range => {
                 range.value = this.value;
             })
-            for(const key in borderRadius){
-                borderRadius[key].innerText = this.value+"%";
-            }
-            
+            borderRadius["top-left"].innerText = this.value+"%";        
         }else{
             document.documentElement.style.setProperty(`--${this.name}`, this.value + "%"); 
             borderRadius[this.name].innerText = this.value+"%";         
