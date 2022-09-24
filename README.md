@@ -4,9 +4,7 @@
 
 A simple CSS generator tool for border-radius, fast and easy to use. 
 
-## Live Demo
-
-https://make-border-radius.netlify.app/
+Live Demo: https://make-border-radius.netlify.app/
 
 ## Feature Overview
 
