@@ -23,7 +23,7 @@ Live Demo: https://make-border-radius.netlify.app/
 
 This project is made purely for fun and it's still under development. I will try to implement Classes and make it more organize. 
 
-Check out my [100 CSS Art Challenge](https://github.com/m-dennisgocong/100CSSArt-Challenge), this is also one of the reason behind making this project so I can shape my ```<div>``` easier and faster when making CSS art. This is based on my personal preference there is a lot of CSS generator Tool you can use. 
+Check out my [100 CSS Art Challenge](https://github.com/m-dennisgocong/100CSSArt-Challenge), this is also one of the reason behind making this project so I can shape my ```<div>``` easier and faster when making CSS art. This is based on my personal preference, feel free to use it. 
 
 ## Credits
 
