@@ -51,7 +51,7 @@ document.querySelector('#app').innerHTML = `
 </aside>
 <ul class="background"></ul>
 `
-setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')));
+setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')), document.getElementById('shape'));
 setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
 setUpBackground(document.querySelector('ul.background'));
