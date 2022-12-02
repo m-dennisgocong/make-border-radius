@@ -173,6 +173,18 @@ code{
   padding: 1em;
   border-radius: 0.5em;
   line-height: 1.5em;
+  margin-bottom: .7em;
+}
+button#copy{
+  padding: .4em 1em;
+  background-color: #ffffff;
+  border: .2em solid #707070;
+  border-radius: .4em;
+  align-self: flex-start;
+}
+button#copy:hover{
+  background-color: #535353;
+  color: #ffffff;
 }
 
 /* break points */

@@ -3,6 +3,7 @@ import {setUpShapeResizer} from './src/shapeResizer.js'
 import {setUpOptions} from './src/toolOptions.js'
 import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
 import {setUpBackground} from './src/backgroundAnimation.js'
+import {setUpCopy} from './src/setUpCopy.js'
 
 
 document.querySelector('#app').innerHTML = `
@@ -46,12 +47,18 @@ document.querySelector('#app').innerHTML = `
         border-radius:
         <span id="borderRadiusValue"> 0%;</span> 
         </code>
+        <button id="copy">COPY</button>
     </div>
     
 </aside>
 <ul class="background"></ul>
 `
-setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')), document.getElementById('shape'));
-setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')));
+// height and width value
+const heightValue = document.getElementById('hValue');
+const widthValue = document.getElementById('wValue');
+
+setUpShapeResizer(Array.from(document.querySelectorAll('.resizer')), document.getElementById('shape'), heightValue, widthValue);
+setUpOptions(Array.from(document.querySelectorAll('#toolbox .button')),Array.from(document.querySelectorAll('#toolbox .option')));
 setUpToolBoxFunctions(Array.from(document.querySelectorAll('input[type="range"]')));
 setUpBackground(document.querySelector('ul.background'));
+setUpCopy(document.getElementById('copy'), heightValue, widthValue, document.getElementById('borderRadiusValue'));
