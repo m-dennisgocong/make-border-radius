@@ -105,7 +105,7 @@ body {
   display: flex;
   align-items: center; 
   margin: 1em auto;  
-  
+  user-select: none;
 }
 
 .button{
@@ -150,6 +150,7 @@ input[type='range']{
   display: none;
   margin-bottom: 1em;
   width: 250px;
+  user-select: none;
 }
 .show{
   display: block;
@@ -161,9 +162,11 @@ div.output{
   flex-direction: column;
   gap: .5em;
   margin-bottom: 1.3em;
+
 }
 div.output label{
   padding-left: 1.3em;
+  user-select: none;
 }
 code{
   width: 280px;
