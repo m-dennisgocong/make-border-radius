@@ -1,7 +1,4 @@
-export function setUpOptions(element){
-    
-    const contents = Array.from(document.querySelectorAll('#toolbox .option'));  
-
+export function setUpOptions(element,contents){
     element.forEach(button => button.addEventListener('click', function(){
         // change the button background-color of selected button
         element.forEach(button => button.classList.remove('setOn')) // clear  

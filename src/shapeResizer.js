@@ -1,9 +1,6 @@
 
-export function setUpShapeResizer(resizer, shape){
+export function setUpShapeResizer(resizer, shape, heightValue ,widthValue){
 
-    
-    const heightValue = document.getElementById('hValue');
-    const widthValue = document.getElementById('wValue');
     function mouseDown(e){
         
         let currentResizer = e.target;
