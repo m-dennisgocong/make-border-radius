@@ -162,14 +162,13 @@ div.output{
   flex-direction: column;
   gap: .5em;
   margin-bottom: 1.3em;
-
 }
 div.output label{
-  padding-left: 1.3em;
+  padding-left: .5em;
   user-select: none;
 }
 code{
-  width: 280px;
+  width: 270px;
   border: 0.2em solid #707070;
   background-color: #ffffff;
   align-self: center;
@@ -179,11 +178,10 @@ code{
   margin-bottom: .7em;
 }
 button#copy{
-  padding: .4em 1em;
+  padding: .4em .4em;
   background-color: #ffffff;
   border: .2em solid #707070;
   border-radius: .4em;
-  align-self: flex-start;
 }
 button#copy:hover{
   background-color: #535353;
@@ -220,6 +218,12 @@ button#copy:hover{
     width: 400px;
     min-width: 350px;
   }
+
+  button#copy{
+    padding: .5em 1em;
+    align-self: flex-start;
+  }
+
 }
 
 @media (min-width: 1280px){
