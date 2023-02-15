@@ -5,7 +5,7 @@ export function setUpShapeResizer(resizer, shape, heightValue ,widthValue){
         
         let currentResizer = e.target;
         let prevX = e.clientX;
-        let prevY = e.clienty;
+        let prevY = e.clientY;
     
         window.addEventListener("mousemove", mouseMove);
         window.addEventListener("mouseup", mouseUp);
