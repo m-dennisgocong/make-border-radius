@@ -51,6 +51,9 @@ document.querySelector('#app').innerHTML = `
     </div>
     
 </aside>
+<footer>
+    <a href="#"><img src="./src/icons/github-logo.svg" alt="github logo" />Dennis Goc-ong</a>
+</footer>
 <ul class="background"></ul>
 `
 // height and width value
