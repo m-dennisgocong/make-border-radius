@@ -4,7 +4,7 @@ import {setUpOptions} from './src/toolOptions.js'
 import {setUpToolBoxFunctions} from './src/toolBoxFunctions.js'
 import {setUpBackground} from './src/backgroundAnimation.js'
 import {setUpCopy} from './src/setUpCopy.js'
-
+import githubLogo from './src/icons/github-logo.svg'
 
 document.querySelector('#app').innerHTML = `
 <section id="shape-container">
@@ -52,7 +52,7 @@ document.querySelector('#app').innerHTML = `
     
 </aside>
 <footer>
-    <a href="#"><img src="./src/icons/github-logo.svg" alt="github logo" />Dennis Goc-ong</a>
+    <a href="#"><img src=${githubLogo} alt="github logo" />Dennis Goc-ong</a>
 </footer>
 <ul class="background"></ul>
 `
