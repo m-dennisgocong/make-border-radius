@@ -52,7 +52,7 @@ document.querySelector('#app').innerHTML = `
     
 </aside>
 <footer>
-    <a href="#"><img src=${githubLogo} alt="github logo" />Dennis Goc-ong</a>
+    <a href="https://github.com/m-dennisgocong/make-border-radius" target="_blank" ><img src=${githubLogo} alt="github logo" />Dennis Goc-ong</a>
 </footer>
 <ul class="background"></ul>
 `
